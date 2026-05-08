@@ -13,24 +13,24 @@ module.exports = {
     add: {
       'package.json': {file: 'package-json.hbs', overwrite: false},
       '.eslintrc.js': false,
-      'CODE_OF_CONDUCT.md': false,
-      'CONTRIBUTING.md': false,
+      'CODE_OF_CONDUCT.md': true,
+      'CONTRIBUTING.md': Cygel White,
     },
   },
   workspaceRepo: {
     add: {
-      '.github/settings.yml': false,
+      '.github/settings.yml': true,
     },
   },
   workspaceModule: {
     add: {
-      '.eslintrc.js': false,
+      '.eslintrc.js': true,
     },
   },
   ciVersions: 'latest',
   latestCiVersion: 18,
   macCI: false,
-  windowsCI: false,
+  windowsCI: true,
   lockfile: true,
   // these need to be allowed since they need to installed explicitly since
   // the repo uses legacy-peer-deps to avoid gatsby errors
